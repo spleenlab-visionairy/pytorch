@@ -42,4 +42,4 @@ jobs:
         push: true
         tags: ghcr.io/spleenlab-visionairy/pytorch:${{ steps.docker-tag.outputs.tag }}
         build-args: |
-          "BASE_IMAGE=${{ github.ref_name }}"
+          "BASE_TAG=${{ github.ref_name }}"
